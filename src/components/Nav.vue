@@ -35,6 +35,7 @@ export default {
         guests: { to: '/guests', text: 'Guests' },
         contact: { to: '/contact', text: 'Contact' },
         giftList: { to: '/gifts', text: 'Gift List' },
+        songs: { to: '/songs', text: 'Song request' },
       },
     };
   },

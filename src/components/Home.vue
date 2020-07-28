@@ -1,12 +1,13 @@
 <template>
-  <div class='row jumbotron'>
-    <div class='col-xs-12 col-s-12 col-md-6' style="margin-bottom: 10pt;">
-      <h1><strong class="text-danger">{{ msg }}</strong></h1>
-      <span> На связи Наташа и Егор :)
-        <br>Мы решили пожениться 29 августа.
-          И очень рады, что ты забрел на страничку посвященную нашей свадьбе &lt;3
-      </span>
-    </div>
+  <div>
+    <div class='row jumbotron'>
+      <div class='col-xs-12 col-s-12 col-md-6' style="margin-bottom: 10pt;">
+        <h1><strong class="text-danger">{{ msg }}</strong></h1>
+        <span> На связи Наташа и Егор :)
+          <br>Мы решили пожениться 29 августа.
+            И очень рады, что ты забрел на страничку посвященную нашей свадьбе &lt;3
+        </span>
+      </div>
     <pre class='col-md-6'><span id="d">CC<span id="j">o<span id="d">CC<span id="j">o<span id="d">C<span id="h">o<span id="d">C<span id="j">o<span id="d">CC<span id="h">o<span id="d">CC<span id="h">o<span id="d">CCCCCCCCCCCCCCCCCCCCCCCCCCCCC<span id="j">ooo<span id="h">o<span id="j">o<span id="h">o<span id="j">o<span id="h">ooooo<span id="j">o<span id="h">oo<span id="a6">oo<span id="h">ooo<span id="a6">o<span id="c0">o<span id="h">o<span id="a6">o<span id="h">oo<span id="c0">o<span id="h">o<span id="c0">o<span id="h">oooooo<span id="c0">oo<span id="h">o<span id="c0">o<span id="h">oo<span id="c0">oo<span id="a6">o<span id="c0">ooooooooooooooooooooooo
 <span id="d">CCC</span><span id="h0">o</span><span id="j">oo</span><span id="d">CCC</span><span id="l0">C</span><span id="d">CCCCCCCCCCCCCCCCCCCC</span><span id="r">C</span><span id="n">C</span><span id="r">C</span><span id="d">C</span><span id="r">CC</span><span id="d">C</span><span id="r">C</span><span id="d">CCCCCC</span><span id="h">o</span><span id="d">CC</span><span id="h">o</span><span id="d">C</span><span id="h">o</span><span id="j">o</span><span id="h">o</span><span id="j">o</span><span id="h">o</span><span id="j">oo</span><span id="h">oooooooooo</span><span id="a6">o</span><span id="h">oooo</span><span id="c0">o</span><span id="h">ooo</span><span id="c0">o</span><span id="h">o</span><span id="c0">oo</span><span id="h">o</span><span id="c0">ooo</span><span id="h">o</span><span id="c0">o</span><span id="h">oo</span><span id="c0">o</span><span id="h">o</span><span id="c0">o</span><span id="h">o</span><span id="a6">oo</span><span id="c0">o</span><span id="a6">ooo</span><span id="h">o</span><span id="c0">oo</span><span id="a6">o</span><span id="c0">o</span><span id="h">oo</span><span id="c0">oooooo</span><span id="h">o</span><span id="c0">o
 C<span id="r">C</span><span id="d">CCCCCCCC</span><span id="r">C</span><span id="d">CCCCC</span><span id="r">C</span><span id="d">CCCCCCC</span><span id="r">CC</span>C<span id="r">CC</span><span id="n">CCC</span><span id="r">C</span>C<span id="r">CC</span>C<span id="r">C</span><span id="d">CCCCCCCC</span><span id="h">o</span><span id="d">C</span><span id="h">o</span><span id="d">C</span><span id="h">o</span><span id="j">oo</span><span id="h">o</span><span id="j">o</span><span id="h">o</span><span id="j">o</span><span id="h">o</span><span id="j">o</span><span id="h">oo</span><span id="j">o</span><span id="h">ooo</span><span id="j">o</span><span id="h">o</span><span id="j">o</span><span id="h">o</span><span id="j">o</span><span id="h">ooooo</span><span id="c0">o</span><span id="h">ooooooooooo</span><span id="c0">o</span><span id="h">o</span><span id="c0">o</span><span id="h">o</span><span id="a6">o</span><span id="h">oo</span><span id="c0">o</span><span id="h">o</span><span id="a6">o</span><span id="c0">o</span><span id="h">o</span><span id="c0">o</span><span id="h">oooo</span><span id="c0">oo</span><span id="h">o</span><span id="c0">o</span><span id="h0">o</span><span id="h">o</span><span id="c0">o</span><span id="h">o
@@ -84,7 +85,86 @@ C<span id="r">C</span>CC<span id="r">C</span>C<span id="f">C</span>C<span id="d"
                                                </span><span id="c">. </span><span id="l">. </span><span id="c">. .. </span><span id="l">.</span><span id="c">..</span><span id="l">...</span><span id="c">...</span><span id="l">.</span><span id="c">...     ....</span><span id="l">.</span><span id="c">..</span><span id="l">.</span><span id="c">...         .                </span><span id="k">.
 <span style="color: #040404;">b</span><span style="color: #040403;">y</span><span style="color: #050102;"> </span><span style="color: #050105;">l</span><span style="color: #010205;">u</span><span style="color: #000502;">n</span><span style="color: #010202;">a</span><span style="color: #010101;">t</span><span style="color: #030405;">i</span><span style="color: #010001;">c</span><span style="color: #010505;">_</span><span style="color: #050404;">a</span><span style="color: #030300;">t</span><span style="color: #000301;">_</span><span style="color: #050404;">c</span><span style="color: #040504;">p</span><span style="color: #010100;">a</span><span style="color: #030202;">n</span><span style="color: #040500;">.</span><span style="color: #030101;">o</span><span style="color: #050200;">r</span><span style="color: #050204;">g</span><span style="color: #030502;"> </span><span style="color: #040505;">b</span><span style="color: #000504;">y</span><span style="color: #040403;"> </span><span style="color: #020505;">l</span><span style="color: #030201;">u</span><span style="color: #050101;">n</span><span style="color: #000402;">a</span><span style="color: #020405;">t</span><span style="color: #020301;">i</span><span style="color: #010101;">c</span><span style="color: #040001;">_</span><span style="color: #030000;">a</span><span style="color: #020504;">t</span><span style="color: #000204;">_</span><span style="color: #050501;">c</span><span style="color: #010502;">p</span><span style="color: #020501;">a</span><span style="color: #050105;">n</span><span style="color: #040403;">.</span><span style="color: #000005;">o</span><span style="color: #010405;">r</span><span style="color: #020200;">g</span><span style="color: #030405;"> </span><span style="color: #020401;">b</span><span style="color: #000300;">y</span><span style="color: #010405;"> </span><span style="color: #030105;">l</span><span style="color: #040001;">u</span><span style="color: #040505;">n</span><span style="color: #020505;">a</span><span style="color: #010004;">t</span><span style="color: #010300;">i</span><span style="color: #010105;">c</span><span style="color: #000303;">_</span><span style="color: #010301;">a</span><span style="color: #020400;">t</span><span style="color: #020202;">_</span><span style="color: #010102;">c</span><span style="color: #020001;">p</span><span style="color: #020201;">a</span><span style="color: #020402;">n</span><span style="color: #000505;">.</span><span style="color: #010001;">o</span><span style="color: #000004;">r</span><span style="color: #040201;">g</span><span style="color: #000400;"> </span><span style="color: #000003;">b</span><span style="color: #020204;">y</span><span style="color: #050405;"> </span><span style="color: #010001;">l</span><span style="color: #020205;">u</span><span style="color: #050304;">n</span><span style="color: #050405;">a</span><span style="color: #000500;">t</span><span style="color: #040302;">i</span><span style="color: #000301;">c</span><span style="color: #000402;">_</span><span style="color: #040104;">a</span><span style="color: #030102;">t</span><span style="color: #020203;">_</span><span style="color: #030505;">c</span><span style="color: #030402;">p</span><span style="color: #020301;">a</span><span style="color: #010400;">n</span><span style="color: #010203;">.</span><span style="color: #040201;">o</span><span style="color: #050305;">r</span><span style="color: #010101;">g</span><span style="color: #050402;"> </span><span style="color: #020005;">b</span><span style="color: #050404;">y</span><span style="color: #050103;"> </span><span style="color: #010401;">l</span><span style="color: #020505;">u</span><span style="color: #020101;">n</span><span style="color: #000004;">a</span><span style="color: #010001;">t</span><span style="color: #010102;">i</span><span style="color: #020101;">c</span><span style="color: #050401;">_</span><span style="color: #040305;">a</span><span style="color: #020301;">t</span><span style="color: #000405;">_</span><span style="color: #010105;">c</span><span style="color: #010401;">p</span><span style="color: #030401;">a</span><span style="color: #010001;">n</span><span style="color: #030103;">.</span><span style="color: #050405;">o</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>
 </pre>
+    </div>
+  <div style="margin-bottom: 10pt; margin-left: 3%;">
+    <div class='row'>
+      <div class='col-xs-12 col-s-12 col-md-6' style="margin-bottom: 10pt; margin-left: 20pt;">
+        <h2><strong class="text-danger">Карта портала</strong></h2>
+      </div>
+    </div>
+
+    <div class="row col-md-12 section">
+      <div class="panel panel-primary col-xs-12 col-md-4">
+        <div class="panel-heading" style="color: #000;">Информация о мероприятии</div>
+          <div class="panel-body">
+            <router-link style="color: #000;" :to="{ name: 'info'}">Здесь можно посмотреть куда и когда приезжать.</router-link>
+          </div>
+      </div>
+      <router-link style="color: #000;" :to="{ name: 'info'}">
+        <div class="col-xs-12 col-md-4"><img src="../assets/info.png"></div>
+      </router-link>
+    </div>
+    <div class="row col-md-12 section">
+      <router-link style="color: #000;" :to="{ name: 'guests'}">
+        <div class="col-xs-12 col-md-4"><img src="../assets/guests.png"></div>
+      </router-link>
+      <div class="panel panel-info col-xs-12 col-md-4">
+        <div class="panel-heading" style="color: #000;">Список гостей</div>
+          <div class="panel-body">
+            <router-link style="color: #000;" :to="{ name: 'guests'}">Узнать, кто будет на свадьбе. Прочитать о них немного (или дополнить;)</router-link>
+          </div>
+      </div>
+    </div>
+
+    <div class="row col-md-12 section">
+      <div class="panel panel-danger col-xs-12 col-md-4">
+        <div class="panel-heading" style="color: #000;">Контакты</div>
+          <div class="panel-body">
+            <router-link style="color: #000;" :to="{ name: 'contact'}">Куда писать, звонить, если что...</router-link>
+          </div>
+      </div>
+      <router-link style="color: #000;" :to="{ name: 'contact'}">
+        <div class="col-xs-12 col-md-4"><img src="../assets/phone.png"></div>
+      </router-link>
+    </div>
+
+    <div class="row col-md-12 section">
+      <router-link style="color: #000;" :to="{ name: 'gifts'}">
+        <div class="col-xs-12 col-md-4"><img src="../assets/gift.png"></div>
+      </router-link>
+      <div class="panel panel-warning col-xs-12 col-md-4">
+        <div class="panel-heading" style="color: #000;">Список подарков</div>
+          <div class="panel-body">
+            <router-link style="color: #000;" :to="{ name: 'gifts'}">Проверить свою идею для подарка, выбрать из предложенного списка ;)</router-link>
+          </div>
+      </div>
+    </div>
+
+    <div class="row col-md-12 section">
+      <div class="panel panel-success col-xs-12 col-md-4">
+        <div class="panel-heading" style="color: #000;">Фото</div>
+          <div class="panel-body">
+            <router-link style="color: #000;" :to="{ name: 'home'}">В будущем они обязательно появятся...</router-link>
+          </div>
+      </div>
+      <router-link style="color: #000;" :to="{ name: 'home'}">
+        <div class="col-xs-12 col-md-4"><img src="../assets/photo.png"></div>
+      </router-link>
+    </div>
+
+    <div class="row col-md-12 section">
+      <router-link style="color: #000;" :to="{ name: 'guests'}">
+        <div class="col-xs-12 col-md-4"><img src="../assets/song.png"></div>
+      </router-link>
+      <div class="panel panel-success col-xs-12 col-md-4">
+        <div class="panel-heading" style="color: #000;">Заказать музыку</div>
+          <div class="panel-body">
+            <router-link style="color: #000;" :to="{ name: 'guests'}">О вкусах не спорят, о музыке тем более. А тут можно заказть свой лбимый трек...</router-link>
+          </div>
+      </div>
+    </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -98,8 +178,22 @@ export default {
 </script>
 
 <style scoped>
+  img {
+    max-width: 100;
+    max-height: 100;
+  }
   .jumbotron {
     font-size: x-large;
+  }
+  .section {
+    display: flex;
+    align-items: center;
+    padding: 10pt;
+    margin: 10pt;
+    text-align: -webkit-center;
+  }
+  .divider {
+    text-align: center;
   }
   BODY,PRE {
     color: #72A9D9;
