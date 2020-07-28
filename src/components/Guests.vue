@@ -20,12 +20,12 @@
             th.hidden-xs.col-md-1 Coming
         tbody
           tr(v-for="guest in showGuests" :key="guest.id" :class="{ 'active': key == $route.name }")
-            td {{ guest.name }}
+            router-link(:to="{ name: 'guest', params: { id: guest.id }}") {{ guest.name }}
             td {{ guest.image }}
             td {{ guest.comments }}
             td
               button.hidden-xs.btn.btn-success.dropdown-toggle(type="button") Add comment
-              button.visible-xs.btn.btn-success.btn-xs.dropdown-toggle(type="button") ✍️
+              button.visible-xs.btn-mini.btn-success.btn-xs.dropdown-toggle(type="button") Add ✍️
             td.hidden-xs(v-if='guest.accept') ➕
             td.hidden-xs(v-else) ➖
 </template>
@@ -63,5 +63,8 @@ export default {
 }
 .form-control{
   color: #000;
+}
+.btn-mini{
+  box-shadow: 5px 5px #000;
 }
 </style>
