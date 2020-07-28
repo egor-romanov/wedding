@@ -7,7 +7,7 @@
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        a.navbar-brand(href="/") Наташа &amp; Егор'с веддинг
+        a.navbar-brand(href="/") Свадьба Романовых
       .collapse(id="navbar-wed" :style='navExpanded ? "" : "height: 1px;"' :aria-expanded='navExpanded ? "true" : "false"' :class='navExpanded ? "in" : ""')
         ul.nav.navbar-nav
           li(v-for="(link, key) in links" :key="key" :class="{ 'active': key == $route.name }")

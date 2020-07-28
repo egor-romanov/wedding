@@ -1,9 +1,8 @@
 <template>
   <div class="contact jumbotron row col-xs-12 col-s-12 col-md-8">
     <div>
-    <h1><strong class="text-danger">Свадьба Егора и Наташи Романовых</strong></h1>
-    <h2>29 августа, 2020</h2>
-    <h2>17.00</h2>
+    <h1><strong class="text-danger">Праздование бракосочетания Егора и Наташи Романовых</strong></h1>
+    <h2>29 августа 2020, 17.00</h2>
     <h4 style="margin-top:20pt;"><a href="http://benuaevent.ru/">Ферма Бенуа,</a><span>&nbsp;</span><a href="https://yandex.ru/maps/-/CCQpIJxb-A">Тихорецкий пр., д. 17Г, 2-й этаж</a></h4>
     </div>
     <pre><span id="o">ooooo<span id="x">o<span id="g">o<span id="o">o<span id="f0">o<span id="e9">c<span id="a6">o<span id="g">o<span id="o">o<span id="b">CC<span id="o">o<span id="a6">o<span id="e7">o<span id="a6">o<span id="c4">C<span id="d">CCC<span id="b">C<span id="x">o<span id="g">o<span id="e9">c<span id="k2">cc<span id="f0">o<span id="g">o<span id="o">o<span id="e7">o<span id="e9">c<span id="f0">o<span id="e9">c<span id="e7">o<span id="f0">o<span id="e7">o<span id="k8">ccc<span id="m5">ccc<span id="k2">c<span id="m5">c<span id="k2">c<span id="k8">cc<span id="e9">ccccc<span id="e7">o<span id="e9">c<span id="g">o<span id="h">C<span id="j7">C<span id="c">OOOO<span id="e">O<span id="j">OO<span id="u">8<span id="j">OOO<span id="u">8<span id="e">O<span id="j">O<span id="e">O<span id="c">OOCCC<span id="d">CC<span id="c4">C<span id="b">C<span id="g">oo<span id="b">CC<span id="c4">C<span id="h">C<span id="c">OC<span id="c">OCC<span id="h">C<span id="c4">CC<span id="e">O<span id="j">O<span id="b5">8888<span id="j">O<span id="c">O<span id="d">C<span id="b">C<span id="c4">C<span id="b">CCCCCCCC<span id="g">o<span id="b">C<span id="g">oo<span id="x">o<span id="g">o<span id="b">C<span id="d">C<span id="h">C<span id="b">CCC<span id="h">CC<span id="d">C<span id="b">CCCCCCCCCCC<span id="d">C<span id="h">CCC<span id="c">OOC
