@@ -3,9 +3,12 @@
     <div class='row jumbotron'>
       <div class='col-xs-12 col-s-12 col-md-6' style="margin-bottom: 10pt;">
         <h1><strong class="text-danger">{{ msg }}</strong></h1>
+        <br>
         <span> На связи Наташа и Егор :)
+          <br>
+          <br>
           <br>Мы решили пожениться 29 августа.
-            И очень рады, что ты забрел на страничку посвященную нашей свадьбе &lt;3
+            И очень рады, что ты забрел на портал посвященный нашей свадьбе &lt;3 Его экспресс дизайн был сгенерирован нейросетью. Все неслучайные совпадения являются случайными.
         </span>
       </div>
     <pre class='col-md-6'><span id="d">CC<span id="j">o<span id="d">CC<span id="j">o<span id="d">C<span id="h">o<span id="d">C<span id="j">o<span id="d">CC<span id="h">o<span id="d">CC<span id="h">o<span id="d">CCCCCCCCCCCCCCCCCCCCCCCCCCCCC<span id="j">ooo<span id="h">o<span id="j">o<span id="h">o<span id="j">o<span id="h">ooooo<span id="j">o<span id="h">oo<span id="a6">oo<span id="h">ooo<span id="a6">o<span id="c0">o<span id="h">o<span id="a6">o<span id="h">oo<span id="c0">o<span id="h">o<span id="c0">o<span id="h">oooooo<span id="c0">oo<span id="h">o<span id="c0">o<span id="h">oo<span id="c0">oo<span id="a6">o<span id="c0">ooooooooooooooooooooooo
@@ -153,13 +156,13 @@ C<span id="r">C</span>CC<span id="r">C</span>C<span id="f">C</span>C<span id="d"
     </div>
 
     <div class="row col-md-12 section">
-      <router-link style="color: #000;" :to="{ name: 'guests'}">
+      <router-link style="color: #000;" :to="{ name: 'songs'}">
         <div class="col-xs-12 col-md-4"><img src="../assets/song.png"></div>
       </router-link>
       <div class="panel panel-success col-xs-12 col-md-4">
         <div class="panel-heading" style="color: #000;">Заказать музыку</div>
           <div class="panel-body">
-            <router-link style="color: #000;" :to="{ name: 'guests'}">О вкусах не спорят, о музыке тем более. А тут можно заказть свой лбимый трек...</router-link>
+            <router-link style="color: #000;" :to="{ name: 'songs'}">О вкусах не спорят, о музыке тем более. А тут можно заказть свой любимый трек...</router-link>
           </div>
       </div>
     </div>
