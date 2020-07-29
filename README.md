@@ -8,6 +8,9 @@
 # install dependencies
 yarn
 
+# update bootstrap styles
+yarn style
+
 # serve with hot reload at localhost:8080
 yarn dev
 

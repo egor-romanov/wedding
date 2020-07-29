@@ -17,24 +17,39 @@
             th.col-xs-1.col-s-1.col-md-1 Image
             th.col-xs-3.col-s-3.col-md-6 Description
             th.col-xs-1.col-s-1.col-md-2 Comment
-            th.hidden-xs.col-md-1 Coming
+            th.hidden-xs.hidden-sm.col-md-1 Coming
         tbody
           tr(v-for="guest in showGuests" :key="guest.id" :class="{ 'active': key == $route.name }")
-            router-link(:to="{ name: 'guest', params: { id: guest.id }}") {{ guest.name }}
+            td
+              router-link(:to="{ name: 'guest', params: { id: guest.id }}") {{ guest.name }}
             td {{ guest.image }}
-            td {{ guest.comments }}
+            td.visible-lg
+              pre(style='max-width: 50rem;') {{ guest.comments.length > 0 ? guest.comments.join('\r\n') : 'Тут пока никто не написал :(' }}
+              div(style='width: 100%; text-align: right;')
+                router-link(:to="{ name: 'guest', params: { id: guest.id }}", v-if='guest.comments.length > 0')  Читать дальше...
+            td.visible-md
+              pre(style='max-width: 40rem;') {{ guest.comments.length > 0 ? guest.comments.join('\r\n') : 'Тут пока никто не написал :(' }}
+              div(style='width: 100%; text-align: right;')
+                router-link(:to="{ name: 'guest', params: { id: guest.id }}", v-if='guest.comments.length > 0')  Читать дальше...
+            td.visible-xs.visible-sm
+              span {{ guest.comments.length > 0 ? guest.comments[0] : 'Тут пока никто не написал :(' }}
+              br(v-if='guest.comments.length > 0')
+              router-link(:to="{ name: 'guest', params: { id: guest.id }}", v-if='guest.comments.length > 0')  Читать дальше...
             td
               button.hidden-xs.btn.btn-success.dropdown-toggle(type="button") Add comment
               button.visible-xs.btn-mini.btn-success.btn-xs.dropdown-toggle(type="button") Add ✍️
-            td.hidden-xs(v-if='guest.accept') ➕
-            td.hidden-xs(v-else) ➖
+            td.hidden-xs.hidden-sm(v-if='guest.accept') ➕
+            td.hidden-xs.hidden-sm(v-else) ➖
 </template>
 
 <script>
+import guestsApi from '../api/guestsApi';
+
 export default {
   data() {
     return {
       filter: '',
+      guestLine: '',
       guests: [
         {
           id: 1,
@@ -47,12 +62,22 @@ export default {
       showGuests: [],
     };
   },
-  mounted() {
-    this.showGuests = this.guests;
+  async mounted() {
+    await this.listGuests();
   },
   methods: {
     search() {
       this.showGuests = this.guests.filter(g => g.name.toLowerCase().indexOf(this.filter.toLowerCase()) > -1);
+    },
+    async addComment(id) {
+      await guestsApi.addGuestLine(id, this.guestLine);
+
+      this.guests = await guestsApi.listGuests();
+      this.showGuests = this.guests;
+    },
+    async listGuests() {
+      this.guests = await guestsApi.listGuests();
+      this.showGuests = this.guests;
     },
   },
 };

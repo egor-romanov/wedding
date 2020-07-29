@@ -2,7 +2,7 @@
   .contact.jumbotron
     h1
       strong.text-danger Track request
-    .panel.panel-primary.row.col-xs-12.col-s-12.col-md-8
+    .panel.panel-primary.row.col-xs-12.col-s-12.col-md-8.flying
       .panel-body.row
         p.col-xs-12.col-md-8 Закажи музыку, не стесняйся
       .navbar-form.navbar-right.col-xs-8.col-md-4(role="submit")
@@ -35,6 +35,8 @@
 </template>
 
 <script>
+import songsApi from '../api/songsApi';
+
 export default {
   data() {
     return {
@@ -47,17 +49,26 @@ export default {
         },
       ],
       showSongs: [],
+      sendSong: '',
+      sendOrdered: '',
     };
   },
-  mounted() {
+  async mounted() {
+    this.songs = await songsApi.getSongs();
     this.showSongs = this.songs;
   },
   methods: {
     search() {
       this.showSongs = this.songs.filter(g => g.name.toLowerCase().indexOf(this.filter.toLowerCase()) > -1);
     },
-    send() {
+    async send() {
+      await songsApi.addSong(this.sendSong, this.sendOrdered);
 
+      this.sendSong = '';
+      this.sendOrdered = '';
+
+      this.songs = await songsApi.getSongs();
+      this.showSongs = this.songs;
     },
   },
 };
@@ -75,7 +86,8 @@ input {
 .form-control{
   color: #000;
 }
-.btn-mini{
-  box-shadow: 5px 5px #000;
+.flying{
+  box-shadow: 10pt 10pt #000;
+  margin-bottom: 20pt;
 }
 </style>

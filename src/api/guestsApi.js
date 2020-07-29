@@ -1,11 +1,11 @@
 import HttpClient from '../utils/httpClient';
 
-const endPoint = `${process.env.VUE_APP_API_BACKEND}/api/guests`;
+const endPoint = 'http://localhost/api/guests';
 
 const getGuestById = async id => {
   const httpClient = new HttpClient();
   try {
-    const data = await httpClient.getAsync(`${endPoint}/${id}`);
+    const data = await httpClient.getAsyncS(`${endPoint}/${id}`);
     return data;
   } catch (error) {
     throw error;
@@ -15,23 +15,8 @@ const getGuestById = async id => {
 const listGuests = async () => {
   const httpClient = new HttpClient();
   try {
-    const data = await httpClient.getAsync(`${endPoint}`);
+    const data = await httpClient.getAsyncS(`${endPoint}`);
     return data;
-  } catch (error) {
-    throw error;
-  }
-};
-
-const addGuest = async guest => {
-  const httpClient = new HttpClient();
-  try {
-    const response = await httpClient.postAsyncS(`${endPoint}`, guest);
-
-    if (response.length !== 0) {
-      return response;
-    }
-
-    return response.data;
   } catch (error) {
     throw error;
   }
@@ -40,22 +25,19 @@ const addGuest = async guest => {
 const addGuestLine = async (id, line) => {
   const httpClient = new HttpClient();
   try {
-    const response = await httpClient.postAsyncS(`${endPoint}/${id}`, line);
+    // eslint-disable-next-line no-undef
+    const formData = new FormData();
+    formData.append('comment', line);
+    const response = await httpClient.postAsyncS(`${endPoint}/${id}/comment`, formData);
 
-    if (response.length !== 0) {
-      return response;
-    }
+    return response;
   } catch (error) {
     throw error;
   }
 };
 
-const searchUrl = `${endPoint}/Search?name=`;
-
 export default {
   getGuestById,
   listGuests,
-  addGuest,
   addGuestLine,
-  searchUrl,
 };

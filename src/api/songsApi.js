@@ -1,11 +1,11 @@
 import HttpClient from '../utils/httpClient';
 
-const endPoint = 'http://localhost/api/invite';
+const endPoint = 'http://localhost/api/songs';
 
-const getInvitationById = async id => {
+const getSongs = async id => {
   const httpClient = new HttpClient();
   try {
-    const data = await httpClient.getAsyncS(`${endPoint}/${id}`);
+    const data = await httpClient.getAsyncS(`${endPoint}`);
 
     return data;
   } catch (error) {
@@ -13,13 +13,14 @@ const getInvitationById = async id => {
   }
 };
 
-const setComingById = async (id, accept) => {
+const addSong = async (name, ordered) => {
   const httpClient = new HttpClient();
   try {
     // eslint-disable-next-line no-undef
     const formData = new FormData();
-    formData.append('accept', accept);
-    const response = await httpClient.postAsyncS(`${endPoint}/${id}/accept`, formData);
+    formData.append('name', name);
+    formData.append('ordered', ordered);
+    const response = await httpClient.postAsyncS(`${endPoint}`, formData);
 
     return response;
   } catch (error) {
@@ -28,6 +29,6 @@ const setComingById = async (id, accept) => {
 };
 
 export default {
-  getInvitationById,
-  setComingById,
+  getSongs,
+  addSong,
 };

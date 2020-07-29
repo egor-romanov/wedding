@@ -142,7 +142,7 @@ C<span id="r">C</span>CC<span id="r">C</span>C<span id="f">C</span>C<span id="d"
 
     <div class="row col-md-12 section">
       <div class="panel panel-success col-xs-12 col-md-4">
-        <div class="panel-heading" style="color: #000;">Фото</div>
+        <div class="panel-heading" style="color: #000; background-color: #5cb85c; border-color: #4cae4c;">Фото</div>
           <div class="panel-body">
             <router-link style="color: #000;" :to="{ name: 'home'}">В будущем они обязательно появятся...</router-link>
           </div>

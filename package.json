@@ -5,12 +5,14 @@
   "author": "Tornike Razmadze <torniker@gmail.com>",
   "private": true,
   "scripts": {
+    "style": "sudo cp -Rv dos-strap/ node_modules/bootstrap/",
     "dev": "node build/dev-server.js",
     "build": "node build/build.js",
     "test": "",
     "lint": "eslint --ext .js,.vue src"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "babel-runtime": "^6.0.0",
     "bootstrap": "^3.3.7",
     "vue": "^2.0.0-rc.4",
