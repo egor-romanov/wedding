@@ -14,7 +14,7 @@
         thead
           tr
             th.col-xs-2.col-s-2.col-md-2 Name
-            th.col-xs-1.col-s-1.col-md-1 Image
+            th.hidden-xs.col-s-1.col-md-1 Image
             th.col-xs-3.col-s-3.col-md-6 Description
             th.col-xs-1.col-s-1.col-md-2 Comment
             th.hidden-xs.hidden-sm.col-md-1 Coming
@@ -22,7 +22,8 @@
           tr(v-for="guest in showGuests" :key="guest.id" :class="{ 'active': key == $route.name }")
             td
               router-link(:to="{ name: 'guest', params: { id: guest.id }}") {{ guest.name }}
-            td {{ guest.image }}
+            td.hidden-xs
+              img(:src='guest.imagePath')
             td.visible-lg
               pre(style='max-width: 50rem;') {{ guest.comments.length > 0 ? guest.comments.join('\r\n') : 'Тут пока никто не написал :(' }}
               div(style='width: 100%; text-align: right;')
@@ -83,6 +84,9 @@ export default {
 };
 </script>
 <style scoped>
+img {
+  width: 80pt;
+}
 .table {
   word-wrap:break-word;
 }
