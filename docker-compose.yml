@@ -1,0 +1,12 @@
+﻿version: '3'
+services:
+    bus-kit-postgres:
+        image: postgres:9.6.17-alpine
+        container_name: wedding-postgres
+        environment:
+          POSTGRES_DB: PrimaryStorage
+          POSTGRES_USER: sa
+          POSTGRES_PASSWORD: qwerty`123
+          MAX_CONNECTIONS: 1000
+        ports:
+          - "5432:5432"

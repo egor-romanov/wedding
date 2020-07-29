@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wedding", "wedding\wedding.csproj", "{A5307D12-B29E-4081-93C2-235464B2917C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimaryStorage", "PrimaryStorage\PrimaryStorage.csproj", "{2564FA65-BB23-40D8-AEAE-5D5B5740FD9B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".docker", ".docker", "{1E5C1AA9-06C0-43D4-8309-6019D683E87D}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		.dockerignore = .dockerignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A5307D12-B29E-4081-93C2-235464B2917C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5307D12-B29E-4081-93C2-235464B2917C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5307D12-B29E-4081-93C2-235464B2917C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5307D12-B29E-4081-93C2-235464B2917C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2564FA65-BB23-40D8-AEAE-5D5B5740FD9B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2564FA65-BB23-40D8-AEAE-5D5B5740FD9B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2564FA65-BB23-40D8-AEAE-5D5B5740FD9B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2564FA65-BB23-40D8-AEAE-5D5B5740FD9B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
