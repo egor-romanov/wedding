@@ -71,13 +71,14 @@ namespace wedding.Controllers
         public async Task<ServiceResult> AddComment(int id,
             [FromForm] string comment)
         {
-            if (_primaryStorageDb.Guests.Where(g => g.Id == id).Count() > 0)
-            {
-                await _primaryStorageDb.GuestComments.AddAsync(new PrimaryStorage.Entities.GuestComment { GuestId = id, Comment = comment });
-                await _primaryStorageDb.SaveChangesAsync();
-                return ServiceResult.Success;
-            }
-            return null;
+            if (comment == null || comment.Length < 3 || _primaryStorageDb.Guests.Where(g => g.Id == id).Count() == 0)
+                return null;
+
+            await _primaryStorageDb.GuestComments.AddAsync(new PrimaryStorage.Entities.GuestComment { GuestId = id, Comment = comment });
+            await _primaryStorageDb.SaveChangesAsync();
+            return ServiceResult.Success;
+
+
         }
 
         [HttpPost("{id}/accept")]

@@ -1,5 +1,8 @@
 import Vue from 'vue';
 
+import Vuelidate from 'vuelidate';
+Vue.use(Vuelidate);
+
 Vue.use(require('vue-resource'));
 const VueRouter = require('vue-router');
 Vue.use(VueRouter);

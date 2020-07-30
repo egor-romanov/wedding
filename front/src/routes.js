@@ -15,7 +15,7 @@ module.exports = {
     { path: '/contact', name: 'contact', component: Contact },
     { path: '/info', name: 'info', component: Info },
     { path: '/guests', name: 'guests', component: Guests },
-    { path: '/guests/:id', name: 'guest', component: Guest },
+    { path: '/guests/:id', name: 'guest', component: Guest, props: true },
     { path: '/invite/:id', name: 'invite', component: Invitation },
     { path: '/gifts', name: 'gifts', component: GiftList },
     { path: '/songs', name: 'songs', component: Songs },

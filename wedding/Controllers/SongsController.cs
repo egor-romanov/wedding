@@ -41,6 +41,8 @@ namespace wedding.Controllers
             [FromForm] string name,
             [FromForm] string ordered)
         {
+            if (name == null || name.Length < 2 || ordered == null || ordered.Length < 2)
+                return null;
             await _primaryStorageDb.Songs.AddAsync(new PrimaryStorage.Entities.Song { Name = name, Ordered = ordered });
             await _primaryStorageDb.SaveChangesAsync();
 

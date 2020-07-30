@@ -37,8 +37,12 @@
               br(v-if='guest.comments.length > 0')
               router-link(:to="{ name: 'guest', params: { id: guest.id }}", v-if='guest.comments.length > 0')  Читать дальше...
             td
-              button.hidden-xs.btn.btn-success.dropdown-toggle(type="button") Add comment
-              button.visible-xs.btn-mini.btn-success.btn-xs.dropdown-toggle(type="button") Add ✍️
+              router-link.hidden-xs.btn.btn-success.dropdown-toggle(
+                :to="{ name: 'guest', params: { id: guest.id, comment: true }}"
+                type="button" ) Add comment
+              router-link.visible-xs.btn-mini.btn-success.btn-xs.dropdown-toggle(
+                :to="{ name: 'guest', params: { id: guest.id, comment: true }}"
+              type="button") Add ✍️
             td.hidden-xs.hidden-sm(v-if='guest.accept') ➕
             td.hidden-xs.hidden-sm(v-else) ➖
 </template>

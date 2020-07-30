@@ -5664,10 +5664,10 @@ vue-resource@^1.0.1:
   dependencies:
     got "^8.0.3"
 
-vue-router@2.0.0-rc.4:
-  version "2.0.0-rc.4"
-  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-2.0.0-rc.4.tgz#21d108eb36e7a461c593e7ddb27bd227bf20f08e"
-  integrity sha1-IdEI6zbnpGHFk+fdsnvSJ78g8I4=
+vue-router@2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-2.2.0.tgz#65a29ce23d718ddf09237938a58a01b3d1acc77c"
+  integrity sha1-ZaKc4j1xjd8JI3k4pYoBs9Gsx3w=
 
 vue-style-loader@^1.0.0:
   version "1.0.0"
@@ -5693,6 +5693,11 @@ vue@^2.0.0-rc.4:
   version "2.6.11"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.11.tgz#76594d877d4b12234406e84e35275c6d514125c5"
   integrity sha512-VfPwgcGABbGAue9+sfrD4PuwFar7gPb1yl1UK1MwXoQPAw0BKSqWfoYCT/ThFrdEVWoI51dBuyCoiNU9bZDZxQ==
+
+vuelidate@^0.7.5:
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/vuelidate/-/vuelidate-0.7.5.tgz#ff48c75ae9d24ea24c24e9ea08065eda0a0cba0a"
+  integrity sha512-GAAG8QAFVp7BFeQlNaThpTbimq3+HypBPNwdkCkHZZeVaD5zmXXfhp357dcUJXHXTZjSln0PvP6wiwLZXkFTwg==
 
 watchpack@^0.2.1:
   version "0.2.9"
