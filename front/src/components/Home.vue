@@ -96,22 +96,23 @@ C<span id="r">C</span>CC<span id="r">C</span>C<span id="f">C</span>C<span id="d"
       </div>
     </div>
 
-    <div class="row col-md-12 section">
-      <div class="panel panel-primary col-xs-12 col-md-4">
+    <div class="row col-md-8 col-xs-12 section">
+      <div class="panel panel-primary col-xs-12 col-md-6">
         <div class="panel-heading" style="color: #000;">Информация о мероприятии</div>
           <div class="panel-body">
             <router-link style="color: #000;" :to="{ name: 'info'}">Здесь можно посмотреть куда и когда приезжать.</router-link>
           </div>
       </div>
       <router-link style="color: #000;" :to="{ name: 'info'}">
-        <div class="col-xs-12 col-md-4"><img src="../assets/info.png"></div>
+        <div class="col-xs-12 col-md-6"><img src="../assets/info.png"></div>
       </router-link>
     </div>
-    <div class="row col-md-12 section">
+
+    <div class="row col-md-8 col-xs-12 section">
       <router-link style="color: #000;" :to="{ name: 'guests'}">
-        <div class="col-xs-12 col-md-4"><img src="../assets/guests.png"></div>
+        <div class="col-xs-12 col-md-6"><img src="../assets/guests.png"></div>
       </router-link>
-      <div class="panel panel-info col-xs-12 col-md-4">
+      <div class="panel panel-info col-xs-12 col-md-6">
         <div class="panel-heading" style="color: #000;">Список гостей</div>
           <div class="panel-body">
             <router-link style="color: #000;" :to="{ name: 'guests'}">Узнать, кто будет на свадьбе. Прочитать о них немного (или дополнить;)</router-link>
@@ -119,23 +120,23 @@ C<span id="r">C</span>CC<span id="r">C</span>C<span id="f">C</span>C<span id="d"
       </div>
     </div>
 
-    <div class="row col-md-12 section">
-      <div class="panel panel-danger col-xs-12 col-md-4">
+    <div class="row col-md-8 col-xs-12 section">
+      <div class="panel panel-danger col-xs-12 col-md-6">
         <div class="panel-heading" style="color: #000;">Контакты</div>
           <div class="panel-body">
             <router-link style="color: #000;" :to="{ name: 'contact'}">Куда писать, звонить, если что...</router-link>
           </div>
       </div>
       <router-link style="color: #000;" :to="{ name: 'contact'}">
-        <div class="col-xs-12 col-md-4"><img src="../assets/phone.png"></div>
+        <div class="col-xs-12 col-md-6"><img src="../assets/phone.png"></div>
       </router-link>
     </div>
 
-    <div class="row col-md-12 section">
+    <div class="row col-md-8 col-xs-12 section">
       <router-link style="color: #000;" :to="{ name: 'gifts'}">
-        <div class="col-xs-12 col-md-4"><img src="../assets/gift.png"></div>
+        <div class="col-xs-12 col-md-6"><img src="../assets/gift.png"></div>
       </router-link>
-      <div class="panel panel-warning col-xs-12 col-md-4">
+      <div class="panel panel-warning col-xs-12 col-md-6">
         <div class="panel-heading" style="color: #000;">Список подарков</div>
           <div class="panel-body">
             <router-link style="color: #000;" :to="{ name: 'gifts'}">Проверить свою идею для подарка, выбрать из предложенного списка ;)</router-link>
@@ -143,23 +144,23 @@ C<span id="r">C</span>CC<span id="r">C</span>C<span id="f">C</span>C<span id="d"
       </div>
     </div>
 
-    <div class="row col-md-12 section">
-      <div class="panel panel-success col-xs-12 col-md-4">
+    <div class="row col-md-8 col-xs-12 section">
+      <div class="panel panel-success col-xs-12 col-md-6">
         <div class="panel-heading" style="color: #000; background-color: #5cb85c; border-color: #4cae4c;">Фото</div>
           <div class="panel-body">
             <router-link style="color: #000;" :to="{ name: 'home'}">В будущем они обязательно появятся...</router-link>
           </div>
       </div>
       <router-link style="color: #000;" :to="{ name: 'home'}">
-        <div class="col-xs-12 col-md-4"><img src="../assets/photo.png"></div>
+        <div class="col-xs-12 col-md-6"><img src="../assets/photo.png"></div>
       </router-link>
     </div>
 
-    <div class="row col-md-12 section">
+    <div class="row col-md-8 col-xs-12 section">
       <router-link style="color: #000;" :to="{ name: 'songs'}">
-        <div class="col-xs-12 col-md-4"><img src="../assets/song.png"></div>
+        <div class="col-xs-12 col-md-6"><img src="../assets/song.png"></div>
       </router-link>
-      <div class="panel panel-success col-xs-12 col-md-4">
+      <div class="panel panel-success col-xs-12 col-md-6">
         <div class="panel-heading" style="color: #000;">Заказать музыку</div>
           <div class="panel-body">
             <router-link style="color: #000;" :to="{ name: 'songs'}">О вкусах не спорят, о музыке тем более. А тут можно заказть свой любимый трек...</router-link>
