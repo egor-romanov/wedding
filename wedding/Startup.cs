@@ -63,7 +63,9 @@ namespace wedding
                 .AllowAnyHeader());
 
             app.UseHttpsRedirection();
+            app.UseDefaultFiles();
             app.UseStaticFiles();
+
             app.UseSwagger().UseSwaggerUI(
                     options => options.SwaggerEndpoint("/swagger/v1/swagger.json", "Wedding API v1"));
 
