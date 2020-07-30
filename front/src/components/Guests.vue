@@ -17,9 +17,8 @@
             th.hidden-xs.col-s-1.col-md-1 Image
             th.col-xs-3.col-s-3.col-md-6 Description
             th.col-xs-1.col-s-1.col-md-2 Comment
-            th.hidden-xs.hidden-sm.col-md-1 Coming
         tbody
-          tr(v-for="guest in showGuests" :key="guest.id" :class="{ 'active': key == $route.name }")
+          tr(v-for="guest in showGuests" :key="guest.id" :class="{ 'active': key == $route.name }" v-if='guest.accepted')
             td
               router-link(:to="{ name: 'guest', params: { id: guest.id }}") {{ guest.name }}
             td.hidden-xs
@@ -43,8 +42,6 @@
               router-link.visible-xs.btn-mini.btn-success.btn-xs.dropdown-toggle(
                 :to="{ name: 'guest', params: { id: guest.id, comment: true }}"
               type="button") Add ✍️
-            td.hidden-xs.hidden-sm(v-if='guest.accept') ➕
-            td.hidden-xs.hidden-sm(v-else) ➖
 </template>
 
 <script>
