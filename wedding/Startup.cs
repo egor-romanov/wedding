@@ -13,6 +13,7 @@ using Swashbuckle.AspNetCore.Swagger;
 using PrimaryStorage;
 using wedding.Services;
 using Microsoft.OpenApi.Models;
+using System.IO;
 
 namespace wedding
 {
@@ -63,6 +64,18 @@ namespace wedding
                 .AllowAnyHeader());
 
             app.UseHttpsRedirection();
+
+            app.Use(async (context, next) =>
+            {
+                await next();
+                var path = context.Request.Path.Value;
+
+                if (!path.StartsWith("/api") && !Path.HasExtension(path))
+                {
+                    context.Request.Path = "/index.html";
+                    await next();
+                }
+            });
             app.UseDefaultFiles();
             app.UseStaticFiles();
 
