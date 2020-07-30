@@ -1,6 +1,6 @@
 import HttpClient from '../utils/httpClient';
 
-const endPoint = 'http://84.201.128.145/api/guests';
+const endPoint = 'http://romanovswedding.ru/api/guests';
 
 const getGuestById = async id => {
   const httpClient = new HttpClient();
