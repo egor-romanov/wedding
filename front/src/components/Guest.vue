@@ -31,11 +31,9 @@
     nav
       ul.pager
         li(:class='guest.id < 2 && "disabled"')
-          router-link(v-if='guest.id > 1' :to="{ name: 'guest', params: { id: guest.id - 1 }}") Previous
-          a(v-else) Previous
-        li(:class='guest.id > 65 && "disabled"')
-          router-link(v-if='guest.id < 66' :to="{ name: 'guest', params: { id: guest.id + 1 }}") Next
-          a(v-else) Previous
+          router-link(:event="guest.id > 1 ? 'click' : ''" :to="{ name: 'guest', params: { id: guest.id - 1 }}") Previous
+        li(:class='guest.id > guestsNumber - 1 && "disabled"')
+          router-link(:event="guest.id < guestsNumber ? 'click' : ''" :to="{ name: 'guest', params: { id: guest.id + 1 }}") Next
 </template>
 
 <script>
@@ -47,14 +45,9 @@ export default {
   data() {
     return {
       showCommentFlag: false,
+      guestsNumber: 67,
       line: '',
-      guest: {
-        id: 1,
-        name: 'Романов Егор',
-        image: '',
-        comments: 'Жених, синьор помидор',
-        accept: true,
-      },
+      guest: {},
     };
   },
   validations: {
@@ -76,6 +69,7 @@ export default {
       this.showCommentFlag = true;
     }
     await this.getGuest();
+    await this.listGuests();
   },
   methods: {
     search() {
@@ -100,6 +94,10 @@ export default {
     },
     hideComment() {
       this.showCommentFlag = false;
+    },
+    async listGuests() {
+      const guests = await guestsApi.listGuests();
+      this.guestsNumber = guests.length;
     },
   },
 };

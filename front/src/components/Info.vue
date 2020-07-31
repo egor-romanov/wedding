@@ -1,7 +1,7 @@
 <template>
   <div class="contact jumbotron row col-xs-12 col-s-12 col-md-8">
     <div>
-    <h1><strong class="text-danger">Праздование бракосочетания Егора и Наташи Романовых</strong></h1>
+    <h1><strong class="text-danger">Празднование бракосочетания Егора и Наташи Романовых</strong></h1>
     <h2>29 августа 2020, 17.00</h2>
     <h4 style="margin-top:20pt;"><a href="http://benuaevent.ru/">Ферма Бенуа,</a><span>&nbsp;</span><a href="https://yandex.ru/maps/-/CCQpIJxb-A">Тихорецкий пр., д. 17Г, 2-й этаж</a></h4>
     </div>

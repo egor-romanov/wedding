@@ -30,7 +30,7 @@
             td 3
             td Official channel
             td
-              a @channel
+              a(href='https://t.me/joinchat/BMQDDBPzZkzax6o30VwIVQ') tgchannel
             td
 </template>
 
