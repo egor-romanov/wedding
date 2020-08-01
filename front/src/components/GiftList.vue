@@ -6,7 +6,7 @@
       .panel-heading
         .panel-body
           ul.list-group
-            li.list-group-item.active Саунбар Bose &lt;3
+            li.list-group-item.active Саундбар Bose &lt;3
               span.badge ✔️
             li.list-group-item Cash
               span.badge ◽️
