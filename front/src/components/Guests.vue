@@ -13,7 +13,7 @@
       table.table
         thead
           tr
-            th.col-xs-2.col-s-2.col-md-2 Name
+            th.col-xs-1.col-s-1.col-md-2 Name
             th.hidden-xs.col-s-1.col-md-1 Image
             th.col-xs-3.col-s-3.col-md-6 Description
             th.col-xs-1.col-s-1.col-md-2 Comment
@@ -85,6 +85,10 @@ export default {
 };
 </script>
 <style scoped>
+.panel {
+  display: table;
+  font-size: initial;
+}
 img {
   width: 80pt;
 }
@@ -96,5 +100,6 @@ img {
 }
 .btn-mini{
   box-shadow: 5px 5px #000;
+  text-align: center;
 }
 </style>
