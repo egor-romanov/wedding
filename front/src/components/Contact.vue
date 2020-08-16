@@ -32,6 +32,12 @@
             td
               a(href='https://t.me/joinchat/BMQDDBPzZkzax6o30VwIVQ') tgchannel
             td
+          tr
+            td 4
+            td Alexander (ведущий)
+            td
+              a(href='https://t.me/AleksanderLe') @AleksanderLe
+            td
 </template>
 
 <script>
