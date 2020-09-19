@@ -148,10 +148,10 @@ C<span id="r">C</span>CC<span id="r">C</span>C<span id="f">C</span>C<span id="d"
       <div class="panel panel-success col-xs-12 col-md-6">
         <div class="panel-heading" style="color: #000; background-color: #5cb85c; border-color: #4cae4c;">Фото</div>
           <div class="panel-body">
-            <router-link style="color: #000;" :to="{ name: 'home'}">В будущем они обязательно появятся...</router-link>
+            <router-link style="color: #000;" :to="{ name: 'photos'}">В будущем они обязательно появятся...</router-link>
           </div>
       </div>
-      <router-link style="color: #000;" :to="{ name: 'home'}">
+      <router-link style="color: #000;" :to="{ name: 'photos'}">
         <div class="col-xs-12 col-md-6"><img src="../assets/photo.png"></div>
       </router-link>
     </div>

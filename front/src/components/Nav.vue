@@ -12,14 +12,6 @@
         ul.nav.navbar-nav
           li(v-for="(link, key) in links" :key="key" :class="{ 'active': key == $route.name }")
             router-link(:to="link.to") {{ link.text }}
-          li.dropdown(:class='photosExpanded && "open"')
-            a.dropdown-toggle(href="#" @click='togglePhoto' data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false") Photos
-              span.caret
-            ul.dropdown-menu
-              li.divider(role='separator')
-              li
-                a(href="#") Coming soon...
-              li.divider(role='separator')
 </template>
 
 <script>
@@ -36,6 +28,7 @@ export default {
         contact: { to: '/contact', text: 'Contact' },
         giftList: { to: '/gifts', text: 'Gift List' },
         songs: { to: '/songs', text: 'Song request' },
+        photos: { to: '/photos', text: 'Photos' },
       },
     };
   },
